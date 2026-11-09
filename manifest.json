@@ -39,7 +39,7 @@
       "dir": "android-ad-cleaner",
       "upstream": "rddmwmddr/android-ad-cleaner",
       "fork": "un314/android-ad-cleaner",
-      "commit": "4a826a1",
+      "commit": "85e2533",
       "type": "python",
       "desc": "免 root 关闭国产安卓系统广告与推送（adb 脚本）",
       "run": "py -m venv .venv && .venv\\Scripts\\pip install -r requirements.txt"
