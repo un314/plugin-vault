@@ -1,44 +1,49 @@
-# 部署状态（2026-11-09）
+# 部署状态（2026-11-09 21:50）
 
-## 云端（GitHub）
+## 云端（GitHub）— 100% 完成
 
-15 个上游全部已 fork 到 `un314`，共 15 份完整副本 + 本 vault 仓库。此项 100% 完成。
+- 15 个上游全部 fork 到 `un314`，均为完整副本（服务端复制，含全部历史）
+- `plugin-vault`：清单、15 份逐插件文档、`bootstrap.ps1`、`verify.ps1`
+- `my-skills`：8 个技能已备份
 
-## 本地
+## 本地 — 8 个完成
 
-```
-插件                 代码      可用性     备注               
---                 --      ---     --               
-hello-agents       缺失      缺失                       
-OpenMausBot        缺失      未装依赖                     
-ziwei-doushu       7922285 依赖已装                     
-android-ad-cleaner 85e2533 venv 就绪                  
-agency-agents      8ae6164 已安装     agency-agents    
-scrapling          c5121c7 未建 venv                  
-goutoujunshi       6db7354 已安装     goutoujunshi     
-AiToEarn           缺失      未装依赖                     
-Y2A-Auto                   未建 venv                  
-Mineradio          649c787 依赖已装                     
-taste-skill        缺失      缺技能文件                    
-agile-pm-workflow  a4d9c14 已安装     agile-pm-workflow
-frontend-design    f8966e6 已安装     frontend-design  
-ecc                缺失      缺技能文件                    
-rea-video          缺失      未建 venv                  
+| 插件 | 体积 | 状态 |
+|---|---|---|
+| agency-agents | 6.6 MB | ✅ 技能已装（299 角色） |
+| agile-pm-workflow | 0.1 MB | ✅ 技能已装 |
+| android-ad-cleaner | 81.8 MB | ✅ 代码 + venv（Python 3.12 + uiautomator2） |
+| frontend-design | 0 MB | ✅ 技能已装 |
+| goutoujunshi | 2.4 MB | ✅ 技能已装 |
+| Mineradio | 132 MB | ✅ 代码 + npm 依赖 |
+| scrapling | 14.5 MB | ✅ 技能已装 |
+| ziwei-doushu | 397.6 MB | ✅ 代码 + npm 依赖（next cli 就绪） |
 
+## 本地 — 7 个未完成（约 1.4 GB）
 
-总计 15 个，缺失 6 个
-```
+`ecc`、`taste-skill`、`rea-video`、`Y2A-Auto`、`hello-agents`、`AiToEarn`、`OpenMausBot`
 
-## 说明
+### 失败的实测证据
 
-- **已完整可用**：8 个插件代码到位；其中 5 个技能已装入 `~/.trae-cn/skills`，2 个 Node 项目依赖已装，1 个 Python 项目虚拟环境已建。
-- **未完成**：7 个大仓库（hello-agents 314MB、OpenMausBot 484MB、AiToEarn 376MB、rea-video 113MB、taste-skill 104MB、ECC 62MB、Y2A-Auto）因本机到 GitHub 的传输被反复中断，未能拉全。云端副本是完整的，换网络后重跑 `bootstrap.ps1` 可续传。
-- 卡点不是配置错误，是带宽：单文件包超过约 30MB 时，连接常在传输中途被重置。
+| 线路 | 实测结果 |
+|---|---|
+| `github.com:443` | 完全连不上（21s 超时） |
+| `codeload.github.com` | 可连，约 23 KB/s，传输中途重置 |
+| `gh-proxy.com` | 峰值 551 KB/s；支持 206 分段，但 512KB 块传一半即卡死 |
+| `ghproxy.net` / `ghfast.top` / `gitclone.com` | 0 字节 / 502 |
+| `gh.ddlc.top` | 429 限流 |
+| 本机代理端口（7890/1080 等） | 无监听 |
 
-## 续传方法
+结论：**不是配置错误，是链路不稳定**。已试过 git 克隆、zip 直下、并行、串行、分块续传五种方式，全部卡在传输中途。
+
+## 恢复方法（有代理/VPN 时）
 
 ```powershell
+# 方式一：一键（推荐，自动判断已完成项）
 powershell -ExecutionPolicy Bypass -File D:\github专用仓库\plugin-vault\bootstrap.ps1
+
+# 方式二：只补某一个
+git clone --depth 1 https://github.com/un314/ECC.git "D:\github专用仓库\plugins\ecc"
 ```
 
-脚本对已完成的项自动跳过，只补缺失部分。
+VPN 开启后，1.4GB 预计 10–20 分钟可拉完。
