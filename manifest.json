@@ -153,6 +153,16 @@
       "run": "克隆后按 README 选择要装的技能子目录"
     },
     {
+      "name": "anime",
+      "dir": "anime",
+      "upstream": "juliangarnier/anime",
+      "fork": "un314/anime",
+      "commit": "01b81be",
+      "type": "node",
+      "desc": "anime.js v4 动画引擎（JS/CSS/SVG/WebGL 通用动画库）",
+      "run": "npm install && npm run build（产物在 dist/；示例 npm run open:examples）"
+    },
+    {
       "name": "rea-video",
       "dir": "rea-video",
       "upstream": "JuneYaooo/rea-video",
