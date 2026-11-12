@@ -1,49 +1,46 @@
-# 部署状态（2026-11-09 21:50）
+# 部署状态（2026-11-12）
 
-## 云端（GitHub）— 100% 完成
+## 环境
 
-- 15 个上游全部 fork 到 `un314`，均为完整副本（服务端复制，含全部历史）
-- `plugin-vault`：清单、15 份逐插件文档、`bootstrap.ps1`、`verify.ps1`
-- `my-skills`：8 个技能已备份
-
-## 本地 — 8 个完成
-
-| 插件 | 体积 | 状态 |
-|---|---|---|
-| agency-agents | 6.6 MB | ✅ 技能已装（299 角色） |
-| agile-pm-workflow | 0.1 MB | ✅ 技能已装 |
-| android-ad-cleaner | 81.8 MB | ✅ 代码 + venv（Python 3.12 + uiautomator2） |
-| frontend-design | 0 MB | ✅ 技能已装 |
-| goutoujunshi | 2.4 MB | ✅ 技能已装 |
-| Mineradio | 132 MB | ✅ 代码 + npm 依赖 |
-| scrapling | 14.5 MB | ✅ 技能已装 |
-| ziwei-doushu | 397.6 MB | ✅ 代码 + npm 依赖（next cli 就绪） |
-
-## 本地 — 7 个未完成（约 1.4 GB）
-
-`ecc`、`taste-skill`、`rea-video`、`Y2A-Auto`、`hello-agents`、`AiToEarn`、`OpenMausBot`
-
-### 失败的实测证据
-
-| 线路 | 实测结果 |
+| 项 | 状态 |
 |---|---|
-| `github.com:443` | 完全连不上（21s 超时） |
-| `codeload.github.com` | 可连，约 23 KB/s，传输中途重置 |
-| `gh-proxy.com` | 峰值 551 KB/s；支持 206 分段，但 512KB 块传一半即卡死 |
-| `ghproxy.net` / `ghfast.top` / `gitclone.com` | 0 字节 / 502 |
-| `gh.ddlc.top` | 429 限流 |
-| 本机代理端口（7890/1080 等） | 无监听 |
+| Node.js | ✅ v24.22.1 / npm 11.19.1 |
+| Python | ⚠️ 仅 3.15（`python` 是商店占位符）与 Astral 3.12；须用 `py` 启动器 |
+| Git | ✅ 2.56.0 |
+| GitHub CLI | ✅ v2.103.3，账号 `un314` |
+| 代理 | ✅ Clash Verge，`127.0.0.1:7897`，已写入 git 全局配置 |
+| GitHub 直连 | ❌ 不通；**必须走代理** |
 
-结论：**不是配置错误，是链路不稳定**。已试过 git 克隆、zip 直下、并行、串行、分块续传五种方式，全部卡在传输中途。
+## 本地插件：31 个，全部克隆成功
 
-## 恢复方法（有代理/VPN 时）
+### 本轮补齐的 22 个（此前因网络失败）
+
+`ecc`、`taste-skill`、`rea-video`、`Y2A-Auto`、`hello-agents`、`AiToEarn`、`OpenMausBot`、`openspec`、`bmad-method`、`superpowers`、`aider`、`gpt-engineer`、`spec-kit`、`claude-code-game-studios`、`awesome-remote-job`、`awesome-telegram-groups`、`awesome-n8n-templates`、`awesome-quant`、`awesome-public-datasets`、`obscura`、`lightpanda`、`ego-lite`
+
+### 已在 Trae 生效的技能（共 24 个）
+
+- 本轮新增：`superpowers` 全家桶 15 个（brainstorming、test-driven-development、systematic-debugging、writing-plans、executing-plans、dispatching-parallel-agents、requesting-code-review、receiving-code-review、verification-before-completion、using-git-worktrees、finishing-a-development-branch、subagent-driven-development、writing-skills、using-superpowers、diagnosing-superpowers）
+- 本轮新增：`taste-skill`
+- 之前：`agency-agents`、`agile-pm-workflow`、`frontend-design`、`goutoujunshi`、`scrapling-official`、`newshub`、`uipath-studio-automation`、`uipath-exam-env-setup`、`rpa-yinqi-reconciliation`
+
+## 未安装依赖的项（代码已就位，按需再装）
+
+| 插件 | 原因 |
+|---|---|
+| `aider` / `gpt-engineer` / `spec-kit` / `bmad-method` | Python 项目，需 pip 安装；本机 Python 3.15 兼容性未验证 |
+| `openspec` / `ego-lite` / `AiToEarn` / `OpenMausBot` | Node 项目，依赖体积大，按需 `npm install` |
+| `obscura` / `lightpanda` | 需 Rust / Zig 工具链，本机未安装 |
+| `ecc`（1068 个技能）/ `claude-code-game-studios`（78 个角色） | 体量大，未全量装入技能目录，可按需挑选 |
+
+## 云端
+
+- 之前 16 个仓库已 fork 到 `un314`
+- 本轮 15 个**未 fork**，仅 Star + 记录在 `manifest.json`（如需完整云端副本，告诉我，服务端 fork 很快）
+- `plugin-vault`：31 条清单 + 分类方案 + 一键恢复脚本
+
+## 恢复方法
 
 ```powershell
-# 方式一：一键（推荐，自动判断已完成项）
+# 先开代理（Clash 7897），git 已配置全局代理
 powershell -ExecutionPolicy Bypass -File D:\github专用仓库\plugin-vault\bootstrap.ps1
-
-# 方式二：只补某一个
-git clone --depth 1 https://github.com/un314/ECC.git "D:\github专用仓库\plugins\ecc"
 ```
-
-VPN 开启后，1.4GB 预计 10–20 分钟可拉完。
