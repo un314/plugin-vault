@@ -35,7 +35,7 @@
 ## 云端
 
 - 之前 16 个仓库已 fork 到 `un314`
-- 本轮 15 个**未 fork**，仅 Star + 记录在 `manifest.json`（如需完整云端副本，告诉我，服务端 fork 很快）
+- 本轮 15 个已 fork **10 个**；另 5 个（awesome-quant、awesome-public-datasets、obscura、lightpanda、ego-lite）受 GitHub fork 频率限制（HTTP 403 "was submitted too quickly"）暂未创建，稍后重试即可
 - `plugin-vault`：31 条清单 + 分类方案 + 一键恢复脚本
 
 ## 恢复方法
