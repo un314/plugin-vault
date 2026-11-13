@@ -1,6 +1,6 @@
 {
     "version":  1,
-    "generatedAt":  "2026-11-12",
+    "generatedAt":  "2026-11-13",
     "root":  "D:\\github专用仓库\\plugins",
     "note":  "fork 为云端完整备份；本地 clone 失败时重跑 bootstrap.ps1 即可续传，已完成的会跳过。",
     "plugins":  [
@@ -12,7 +12,8 @@
                         "commit":  "2a506bc",
                         "type":  "docs",
                         "desc":  "《从零开始构建智能体》教程与配套代码（Jupyter Notebook）",
-                        "run":  "无需安装；用 Jupyter 打开章节 notebook 即可。需要 Python 环境时见 docs/hello-agents.md"
+                        "run":  "无需安装；用 Jupyter 打开章节 notebook 即可。需要 Python 环境时见 docs/hello-agents.md",
+                        "cat":  "资源"
                     },
                     {
                         "name":  "OpenMausBot",
@@ -22,7 +23,8 @@
                         "commit":  "1de1164",
                         "type":  "node",
                         "desc":  "带虚拟机的开源 Bot 平台（TypeScript）",
-                        "run":  "npm install \u0026\u0026 npm run dev（具体脚本见仓库 package.json）"
+                        "run":  "npm install \u0026\u0026 npm run dev（具体脚本见仓库 package.json）",
+                        "cat":  "生活与科技"
                     },
                     {
                         "name":  "ziwei-doushu",
@@ -32,7 +34,8 @@
                         "commit":  "7922285",
                         "type":  "node",
                         "desc":  "紫微斗数开源排盘引擎（Next.js）",
-                        "run":  "npm install \u0026\u0026 npm run dev → http://localhost:3000"
+                        "run":  "npm install \u0026\u0026 npm run dev → http://localhost:3000",
+                        "cat":  "生活与科技"
                     },
                     {
                         "name":  "android-ad-cleaner",
@@ -42,7 +45,8 @@
                         "commit":  "85e2533",
                         "type":  "python",
                         "desc":  "免 root 关闭国产安卓系统广告与推送（adb 脚本）",
-                        "run":  "py -m venv .venv \u0026\u0026 .venv\\Scripts\\pip install -r requirements.txt"
+                        "run":  "py -m venv .venv \u0026\u0026 .venv\\Scripts\\pip install -r requirements.txt",
+                        "cat":  "生活与科技"
                     },
                     {
                         "name":  "agency-agents",
@@ -54,7 +58,8 @@
                         "skillName":  "agency-agents",
                         "skillSource":  "",
                         "desc":  "299 个专业角色代理，覆盖 19 个部门",
-                        "run":  "已装入 ~/.trae-cn/skills/agency-agents，直接说「用 XX 专家帮我」"
+                        "run":  "已装入 ~/.trae-cn/skills/agency-agents，直接说「用 XX 专家帮我」",
+                        "cat":  "AI"
                     },
                     {
                         "name":  "scrapling",
@@ -66,7 +71,8 @@
                         "skillName":  "scrapling-official",
                         "skillSource":  "agent-skill\\Scrapling-Skill",
                         "desc":  "网页抓取框架（抗反爬 + 隐身浏览器）",
-                        "run":  "pip install scrapling \u0026\u0026 scrapling install"
+                        "run":  "pip install scrapling \u0026\u0026 scrapling install",
+                        "cat":  "资源"
                     },
                     {
                         "name":  "goutoujunshi",
@@ -77,7 +83,8 @@
                         "type":  "skill",
                         "skillName":  "goutoujunshi",
                         "desc":  "恋爱军师技能：接住情绪 → 分析关系 → 给可执行策略",
-                        "run":  "已装入 ~/.trae-cn/skills/goutoujunshi"
+                        "run":  "已装入 ~/.trae-cn/skills/goutoujunshi",
+                        "cat":  "生活与科技"
                     },
                     {
                         "name":  "AiToEarn",
@@ -87,7 +94,8 @@
                         "commit":  "47e5a6f",
                         "type":  "node",
                         "desc":  "AI 内容创作与多平台发布平台（pnpm monorepo）",
-                        "run":  "pnpm install \u0026\u0026 pnpm dev（需 pnpm）"
+                        "run":  "pnpm install \u0026\u0026 pnpm dev（需 pnpm）",
+                        "cat":  "生活与科技"
                     },
                     {
                         "name":  "Y2A-Auto",
@@ -97,7 +105,8 @@
                         "commit":  "c5ce9f6",
                         "type":  "python",
                         "desc":  "YouTube 到 AcFun/B站 自动化搬运，含 AI 翻译与字幕",
-                        "run":  "py -m venv .venv 后按 docs/Y2A-Auto.md 安装，需要 ffmpeg"
+                        "run":  "py -m venv .venv 后按 docs/Y2A-Auto.md 安装，需要 ffmpeg",
+                        "cat":  "生活与科技"
                     },
                     {
                         "name":  "Mineradio",
@@ -107,7 +116,8 @@
                         "commit":  "649c787",
                         "type":  "node",
                         "desc":  "沉浸式音乐播放器（Electron + Web）",
-                        "run":  "npm install \u0026\u0026 npm start（或双击 start-mineradio.bat）"
+                        "run":  "npm install \u0026\u0026 npm start（或双击 start-mineradio.bat）",
+                        "cat":  "生活与科技"
                     },
                     {
                         "name":  "taste-skill",
@@ -117,7 +127,8 @@
                         "commit":  "f6b7657",
                         "type":  "skill",
                         "desc":  "让编码 Agent 具备审美：艺术指导、参考图、浏览器自查",
-                        "run":  "克隆后把 SKILL.md 所在目录复制进 ~/.trae-cn/skills"
+                        "run":  "克隆后把 SKILL.md 所在目录复制进 ~/.trae-cn/skills",
+                        "cat":  "AI"
                     },
                     {
                         "name":  "agile-pm-workflow",
@@ -129,7 +140,8 @@
                         "skillName":  "agile-pm-workflow",
                         "skillSource":  "agile-pm-workflow_skill",
                         "desc":  "敏捷 PM 七步工作流：需求采集 → PRD → HTML 原型 → 流程图",
-                        "run":  "已装入 ~/.trae-cn/skills/agile-pm-workflow"
+                        "run":  "已装入 ~/.trae-cn/skills/agile-pm-workflow",
+                        "cat":  "AI"
                     },
                     {
                         "name":  "frontend-design",
@@ -140,7 +152,8 @@
                         "type":  "skill",
                         "skillName":  "frontend-design",
                         "desc":  "前端设计技能：八个审美锚点，锁定配色/字体/质感",
-                        "run":  "已装入 ~/.trae-cn/skills/frontend-design"
+                        "run":  "已装入 ~/.trae-cn/skills/frontend-design",
+                        "cat":  "AI"
                     },
                     {
                         "name":  "ecc",
@@ -150,7 +163,8 @@
                         "commit":  "d2ef268",
                         "type":  "skill",
                         "desc":  "everything-claude-code：技能、记忆、安全、研究优先的 Agent 增强包",
-                        "run":  "克隆后按 README 选择要装的技能子目录"
+                        "run":  "克隆后按 README 选择要装的技能子目录",
+                        "cat":  "AI"
                     },
                     {
                         "name":  "anime",
@@ -160,7 +174,8 @@
                         "commit":  "01b81be",
                         "type":  "node",
                         "desc":  "anime.js v4 动画引擎（JS/CSS/SVG/WebGL 通用动画库）",
-                        "run":  "npm install \u0026\u0026 npm run build（产物在 dist/；示例 npm run open:examples）"
+                        "run":  "npm install \u0026\u0026 npm run build（产物在 dist/；示例 npm run open:examples）",
+                        "cat":  "资源"
                     },
                     {
                         "name":  "rea-video",
@@ -170,7 +185,8 @@
                         "commit":  "e257f79",
                         "type":  "python",
                         "desc":  "逐镜头逆向视频（实拍/AI 生成/代码渲染）并给出复刻方案",
-                        "run":  "py -m venv .venv 后按 docs/rea-video.md 安装"
+                        "run":  "py -m venv .venv 后按 docs/rea-video.md 安装",
+                        "cat":  "生活与科技"
                     },
                     {
                         "name":  "openspec",
@@ -180,7 +196,8 @@
                         "commit":  "d12c281",
                         "type":  "node",
                         "desc":  "规格驱动开发（Spec-Driven Development）CLI 与工作流",
-                        "run":  "npm install \u0026\u0026 npx openspec --help"
+                        "run":  "npm install \u0026\u0026 npx openspec --help",
+                        "cat":  "AI"
                     },
                     {
                         "name":  "bmad-method",
@@ -190,7 +207,8 @@
                         "commit":  "a867e16",
                         "type":  "python",
                         "desc":  "BMAD 敏捷 AI 开发方法论，含 36 个技能与智能体角色",
-                        "run":  "按 README 用 npx bmad-method install"
+                        "run":  "按 README 用 npx bmad-method install",
+                        "cat":  "AI"
                     },
                     {
                         "name":  "superpowers",
@@ -200,7 +218,8 @@
                         "commit":  "22f0b46",
                         "type":  "skill",
                         "desc":  "15 个工程能力技能：头脑风暴、TDD、系统化调试、并行代理、计划执行等",
-                        "run":  "已装入 ~/.trae-cn/skills（15 个）"
+                        "run":  "已装入 ~/.trae-cn/skills（15 个）",
+                        "cat":  "AI"
                     },
                     {
                         "name":  "aider",
@@ -210,7 +229,8 @@
                         "commit":  "5dc9490",
                         "type":  "python",
                         "desc":  "终端里的 AI 结对编程工具",
-                        "run":  "py -m venv .venv \u0026\u0026 .venv\\Scripts\\pip install -e ."
+                        "run":  "py -m venv .venv \u0026\u0026 .venv\\Scripts\\pip install -e .",
+                        "cat":  "AI"
                     },
                     {
                         "name":  "gpt-engineer",
@@ -220,7 +240,8 @@
                         "commit":  "a90fcd5",
                         "type":  "python",
                         "desc":  "用自然语言描述即可生成完整代码库",
-                        "run":  "py -m venv .venv \u0026\u0026 .venv\\Scripts\\pip install -e ."
+                        "run":  "py -m venv .venv \u0026\u0026 .venv\\Scripts\\pip install -e .",
+                        "cat":  "AI"
                     },
                     {
                         "name":  "spec-kit",
@@ -230,7 +251,8 @@
                         "commit":  "979b0a3",
                         "type":  "python",
                         "desc":  "GitHub 官方规格驱动开发工具包",
-                        "run":  "按 README 安装 specify CLI"
+                        "run":  "按 README 安装 specify CLI",
+                        "cat":  "AI"
                     },
                     {
                         "name":  "claude-code-game-studios",
@@ -240,7 +262,8 @@
                         "commit":  "abc0de7",
                         "type":  "skill",
                         "desc":  "游戏工作室角色包，78 个岗位定义（设计/制作/测试）",
-                        "run":  "按需复制 .claude/agents 下角色到技能目录"
+                        "run":  "按需复制 .claude/agents 下角色到技能目录",
+                        "cat":  "AI"
                     },
                     {
                         "name":  "awesome-remote-job",
@@ -250,7 +273,8 @@
                         "commit":  "d7c1d77",
                         "type":  "docs",
                         "desc":  "远程工作资源大全",
-                        "run":  "直接阅读 README"
+                        "run":  "直接阅读 README",
+                        "cat":  "资源"
                     },
                     {
                         "name":  "awesome-telegram-groups",
@@ -260,7 +284,8 @@
                         "commit":  "1d7089a",
                         "type":  "docs",
                         "desc":  "Telegram 群组与频道索引",
-                        "run":  "直接阅读 README"
+                        "run":  "直接阅读 README",
+                        "cat":  "资源"
                     },
                     {
                         "name":  "awesome-n8n-templates",
@@ -270,7 +295,8 @@
                         "commit":  "8271103",
                         "type":  "docs",
                         "desc":  "n8n 自动化工作流模板合集",
-                        "run":  "导入 JSON 到 n8n"
+                        "run":  "导入 JSON 到 n8n",
+                        "cat":  "资源"
                     },
                     {
                         "name":  "awesome-quant",
@@ -280,7 +306,8 @@
                         "commit":  "b52a1a9",
                         "type":  "docs",
                         "desc":  "量化交易资源大全",
-                        "run":  "直接阅读 README"
+                        "run":  "直接阅读 README",
+                        "cat":  "资源"
                     },
                     {
                         "name":  "awesome-public-datasets",
@@ -290,7 +317,8 @@
                         "commit":  "ed22440",
                         "type":  "docs",
                         "desc":  "公开数据集索引",
-                        "run":  "直接阅读 README"
+                        "run":  "直接阅读 README",
+                        "cat":  "资源"
                     },
                     {
                         "name":  "obscura",
@@ -300,7 +328,8 @@
                         "commit":  "3bae609",
                         "type":  "app",
                         "desc":  "Rust 编写的隐身浏览器引擎（AI Agent 用）",
-                        "run":  "需 Rust 工具链：cargo build --release"
+                        "run":  "需 Rust 工具链：cargo build --release",
+                        "cat":  "浏览器引擎"
                     },
                     {
                         "name":  "lightpanda",
@@ -310,7 +339,8 @@
                         "commit":  "a34d699",
                         "type":  "app",
                         "desc":  "Zig 编写的高性能无头浏览器，专为 AI/爬虫",
-                        "run":  "下载官方二进制或 zig build"
+                        "run":  "下载官方二进制或 zig build",
+                        "cat":  "浏览器引擎"
                     },
                     {
                         "name":  "ego-lite",
@@ -320,7 +350,107 @@
                         "commit":  "bacaece",
                         "type":  "app",
                         "desc":  "面向 AI Agent 浏览器自动化的 Chromium 发行版",
-                        "run":  "按 README 启动本地浏览器服务"
+                        "run":  "按 README 启动本地浏览器服务",
+                        "cat":  "浏览器引擎"
+                    },
+                    {
+                        "name":  "awesome-design-md",
+                        "dir":  "awesome-design-md",
+                        "upstream":  "VoltAgent/awesome-design-md",
+                        "fork":  "un314/awesome-design-md",
+                        "commit":  "",
+                        "type":  "docs",
+                        "cat":  "资源",
+                        "desc":  "设计系统与 DESIGN.md 范例合集",
+                        "run":  "直接阅读 README 与各设计文档"
+                    },
+                    {
+                        "name":  "build-your-own-x",
+                        "dir":  "build-your-own-x",
+                        "upstream":  "codecrafters-io/build-your-own-x",
+                        "fork":  "un314/build-your-own-x",
+                        "commit":  "",
+                        "type":  "docs",
+                        "cat":  "资源",
+                        "desc":  "从零手写各种技术的教程索引（数据库/编译器/操作系统等）",
+                        "run":  "直接阅读 README"
+                    },
+                    {
+                        "name":  "awesome-selfhosted",
+                        "dir":  "awesome-selfhosted",
+                        "upstream":  "awesome-selfhosted/awesome-selfhosted",
+                        "fork":  "un314/awesome-selfhosted",
+                        "commit":  "",
+                        "type":  "docs",
+                        "cat":  "资源",
+                        "desc":  "可自托管开源软件大全",
+                        "run":  "直接阅读 README"
+                    },
+                    {
+                        "name":  "awesome-llm-apps",
+                        "dir":  "awesome-llm-apps",
+                        "upstream":  "Shubhamsaboo/awesome-llm-apps",
+                        "fork":  "un314/awesome-llm-apps",
+                        "commit":  "",
+                        "type":  "docs",
+                        "cat":  "AI",
+                        "desc":  "100+ 可直接运行的 AI 应用源码合集",
+                        "run":  "进入对应子目录按各自 README 安装"
+                    },
+                    {
+                        "name":  "ai-job-search",
+                        "dir":  "ai-job-search",
+                        "upstream":  "ai-job-search-dev/ai-job-search",
+                        "fork":  "un314/ai-job-search",
+                        "commit":  "",
+                        "type":  "skill",
+                        "cat":  "AI",
+                        "desc":  "基于 Claude Code 的开源求职工具",
+                        "run":  "见 SETUP.md，配合 Claude Code 使用"
+                    },
+                    {
+                        "name":  "BettaFish",
+                        "dir":  "BettaFish",
+                        "upstream":  "666ghj/BettaFish",
+                        "fork":  "un314/BettaFish",
+                        "commit":  "",
+                        "type":  "python",
+                        "cat":  "AI",
+                        "desc":  "多智能体舆情分析系统",
+                        "run":  "需 Docker（本机未安装）或手动装 requirements.txt"
+                    },
+                    {
+                        "name":  "MiroFish",
+                        "dir":  "MiroFish",
+                        "upstream":  "666ghj/MiroFish",
+                        "fork":  "un314/MiroFish",
+                        "commit":  "",
+                        "type":  "node",
+                        "cat":  "AI",
+                        "desc":  "多智能体内容生成平台",
+                        "run":  "需 Docker 或 npm run setup"
+                    },
+                    {
+                        "name":  "MoneyPrinterTurbo",
+                        "dir":  "MoneyPrinterTurbo",
+                        "upstream":  "harry0703/MoneyPrinterTurbo",
+                        "fork":  "un314/MoneyPrinterTurbo",
+                        "commit":  "",
+                        "type":  "python",
+                        "cat":  "生活与科技",
+                        "desc":  "一键生成短视频（文案/素材/配音/字幕）",
+                        "run":  ".venv 已建好：.venv\\Scripts\\python -m streamlit run webui.py"
+                    },
+                    {
+                        "name":  "lingbot-touch",
+                        "dir":  "lingbot-touch",
+                        "upstream":  "Robbyant/lingbot-touch",
+                        "fork":  "",
+                        "commit":  "",
+                        "type":  "python",
+                        "cat":  "AI",
+                        "desc":  "LingBot Touch：视觉-触觉多模态模型推理工具",
+                        "run":  "pip install -e . 后运行 infer.py"
                     }
                 ]
 }

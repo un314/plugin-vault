@@ -1,0 +1,6 @@
+[
+ {"name":"check-tab","js":"(() => { const t=[...document.querySelectorAll('.el-tabs__item')].map(e=>e.textContent.trim()+(e.classList.contains('is-active')?'*':'')); return JSON.stringify(t); })()"},
+ {"name":"fill","js":"(() => { const v={a1:'__A1__',a2:'__A2__',a3:'__A3__',a4:'__A4__',a5:'__A5__',a6:'__A6__',a7:'__A7__',a8:'__A8__',dzCode:'__CODE__'}; const d=Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value'); const out={}; for(const k in v){ const el=document.getElementById(k); if(!el){ out[k]='MISSING'; continue; } d.set.call(el,v[k]); el.dispatchEvent(new Event('input',{bubbles:true})); el.dispatchEvent(new Event('change',{bubbles:true})); out[k]=el.value; } return JSON.stringify(out); })()"},
+ {"name":"save","js":"(() => { const b=[...document.querySelectorAll('button')].find(x=>x.textContent.replace(/\\s/g,'')==='保存'); if(!b) return 'NO SAVE BUTTON'; b.click(); return 'clicked'; })()", "sleep": 2000},
+ {"name":"result","js":"(() => { const m=[...document.querySelectorAll('.el-message')].map(e=>e.textContent.trim()); return JSON.stringify({msgs:m, a1:document.getElementById('a1').value, dz:document.getElementById('dzCode').value}); })()"}
+]
