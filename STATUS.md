@@ -1,46 +1,36 @@
-# 部署状态（2026-11-12）
+# 部署状态（2026-11-13）
 
-## 环境
+## 仓库结构（已按规范重构）
 
-| 项 | 状态 |
+| 项 | 说明 |
 |---|---|
-| Node.js | ✅ v24.22.1 / npm 11.19.1 |
-| Python | ⚠️ 仅 3.15（`python` 是商店占位符）与 Astral 3.12；须用 `py` 启动器 |
-| Git | ✅ 2.56.0 |
-| GitHub CLI | ✅ v2.103.3，账号 `un314` |
-| 代理 | ✅ Clash Verge，`127.0.0.1:7897`，已写入 git 全局配置 |
-| GitHub 直连 | ❌ 不通；**必须走代理** |
+| 唯一仓库 | `plugin-vault`（不再为单个项目新建仓库） |
+| 分类索引 | `categories/` 4 类：AI 17、资源 11、生活与科技 9、浏览器引擎 3 |
+| 技能备份 | `skills/` 25 个（`my-skills` 内容已并入，原仓库仅留指向说明） |
+| 清点总数 | 40 个项目，全部登记在 `manifest.json` |
 
-## 本地插件：31 个，全部克隆成功
+## 本轮 7 个项目的部署结果
 
-### 本轮补齐的 22 个（此前因网络失败）
+| 项目 | 本地 | 云端 | 可运行性 |
+|---|---|---|---|
+| awesome-design-md | ✅ 174 文件 | ✅ fork | 文档类，直接阅读 |
+| build-your-own-x | ✅ 5 文件 | ✅ fork | 文档类，直接阅读 |
+| awesome-selfhosted | ✅ 7 文件 | ✅ fork | 文档类，直接阅读 |
+| awesome-llm-apps | ✅ 1993 文件 | ✅ fork | 子应用需各自装依赖 |
+| ai-job-search | ✅ 318 文件 | ✅ fork | 需 Claude Code + 配置 |
+| BettaFish | ✅ 294 文件 | ✅ fork | ⚠️ 需 Docker（本机未装） |
+| MiroFish | ✅ 127 文件 | ✅ fork | ⚠️ 需 Docker（本机未装） |
+| MoneyPrinterTurbo | ✅ 489 文件 + venv | ✅ fork | ✅ 依赖已装（streamlit/moviepy/edge_tts 导入通过） |
+| lingbot-touch | ✅ 170 文件 | — （未新建仓库） | ⚠️ 需 `pip install -e .` 与模型权重 |
 
-`ecc`、`taste-skill`、`rea-video`、`Y2A-Auto`、`hello-agents`、`AiToEarn`、`OpenMausBot`、`openspec`、`bmad-method`、`superpowers`、`aider`、`gpt-engineer`、`spec-kit`、`claude-code-game-studios`、`awesome-remote-job`、`awesome-telegram-groups`、`awesome-n8n-templates`、`awesome-quant`、`awesome-public-datasets`、`obscura`、`lightpanda`、`ego-lite`
+## 环境事实
 
-### 已在 Trae 生效的技能（共 24 个）
+- 无 Docker → BettaFish / MiroFish 无法用 docker-compose 启动
+- ffmpeg 已装；Python 3.12（Astral）可用；Node 24 可用
+- GitHub 直连仍不通；`codeload` 与 `api` 可通，git 协议需代理
 
-- 本轮新增：`superpowers` 全家桶 15 个（brainstorming、test-driven-development、systematic-debugging、writing-plans、executing-plans、dispatching-parallel-agents、requesting-code-review、receiving-code-review、verification-before-completion、using-git-worktrees、finishing-a-development-branch、subagent-driven-development、writing-skills、using-superpowers、diagnosing-superpowers）
-- 本轮新增：`taste-skill`
-- 之前：`agency-agents`、`agile-pm-workflow`、`frontend-design`、`goutoujunshi`、`scrapling-official`、`newshub`、`uipath-studio-automation`、`uipath-exam-env-setup`、`rpa-yinqi-reconciliation`
+## 云端运行时说明
 
-## 未安装依赖的项（代码已就位，按需再装）
+本轮所有项目**只有代码托管**，没有公网访问地址。原因：这些项目（Python 服务、多智能体系统）需要一台云主机 + 域名 + 密钥，当前环境没有可用的云平台凭据。文档类项目可开 GitHub Pages，但仓库本身不是站点。
 
-| 插件 | 原因 |
-|---|---|
-| `aider` / `gpt-engineer` / `spec-kit` / `bmad-method` | Python 项目，需 pip 安装；本机 Python 3.15 兼容性未验证 |
-| `openspec` / `ego-lite` / `AiToEarn` / `OpenMausBot` | Node 项目，依赖体积大，按需 `npm install` |
-| `obscura` / `lightpanda` | 需 Rust / Zig 工具链，本机未安装 |
-| `ecc`（1068 个技能）/ `claude-code-game-studios`（78 个角色） | 体量大，未全量装入技能目录，可按需挑选 |
-
-## 云端
-
-- 之前 16 个仓库已 fork 到 `un314`
-- 本轮 15 个已 fork **10 个**；另 5 个（awesome-quant、awesome-public-datasets、obscura、lightpanda、ego-lite）受 GitHub fork 频率限制（HTTP 403 "was submitted too quickly"）暂未创建，稍后重试即可
-- `plugin-vault`：31 条清单 + 分类方案 + 一键恢复脚本
-
-## 恢复方法
-
-```powershell
-# 先开代理（Clash 7897），git 已配置全局代理
-powershell -ExecutionPolicy Bypass -File D:\github专用仓库\plugin-vault\bootstrap.ps1
-```
+如需真正的云端访问地址，需要你提供其一：云服务器 SSH、Vercel/Cloudflare 账号授权、或 Docker 部署目标。
