@@ -13,6 +13,7 @@ plugin-vault/
 │   ├── life-tech.md     生活与科技应用（9）
 │   └── browsers.md      浏览器引擎（3）
 ├── skills/              本机 25 个 Trae 技能的备份（原 my-skills 已并入）
+├── archive/             已合并仓库的归档（原 skills-github-pages）
 ├── docs/                每个项目的部署说明
 ├── bootstrap.ps1        换机一键恢复
 ├── verify.ps1           可用性校验
@@ -46,5 +47,7 @@ powershell -ExecutionPolicy Bypass -File D:\github专用仓库\plugin-vault\veri
 
 | 旧仓库 | 处理 |
 |---|---|
-| `my-skills` | 内容已并入本仓库 `skills/`，原仓库保留 README 指向此处，不再更新 |
-| `skills-github-pages` | 历史遗留，未改动 |
+| `my-skills` | 内容已并入 `skills/`，原仓库仅留指向说明 |
+| `skills-github-pages` | 内容已并入 `archive/skills-github-pages/` |
+
+合并后只保留本仓库一个入口，不再分散查找。
