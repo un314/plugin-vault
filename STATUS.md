@@ -1,13 +1,24 @@
-# 部署状态（2026-11-13）
+# 部署状态（2026-11-25）
 
-## 仓库结构（已按规范重构）
+## 仓库结构
 
 | 项 | 说明 |
 |---|---|
 | 唯一仓库 | `plugin-vault`（不再为单个项目新建仓库） |
-| 分类索引 | `categories/` 4 类：AI 17、资源 11、生活与科技 9、浏览器引擎 3 |
-| 技能备份 | `skills/` 25 个（`my-skills` 内容已并入，原仓库仅留指向说明） |
-| 清点总数 | 40 个项目，全部登记在 `manifest.json` |
+| 分类索引 | `categories/` 4 类：AI 34、资源 16、生活与科技 12、浏览器引擎 3 |
+| 技能备份 | `skills/` 43 个（`my-skills` 内容已并入；本机目录是指向此处的 junction） |
+| 清点总数 | 65 个项目，全部登记在 `manifest.json` |
+
+## 2026-11 批次（开源项目与技能仓库盘点）
+
+新增 25 条登记，详见 `docs/batch-2026-11.md`。其中两个技能已落地可用：
+
+| 技能 | 来源 | 状态 |
+|---|---|---|
+| `nuwa-skill` | alchaincyf/nuwa-skill | ✅ 已就位，可直接触发 |
+| `darwin-skill` | alchaincyf/darwin-skill | ✅ 已就位，可直接触发 |
+
+其余（dify / open-webui / ollama / ARIS / scientific-agent-skills 等）仅登记上游与运行方式，未镜像代码：ARIS 38MB、科学技能库 471MB、Dify 与 Open WebUI 均为数百 MB，整包进仓库会让备份失去意义。
 
 ## 本轮 7 个项目的部署结果
 

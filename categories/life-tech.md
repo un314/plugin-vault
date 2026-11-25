@@ -1,12 +1,15 @@
 # 生活与科技应用
 
-可直接使用的应用类工具：视频、音乐、排盘、自动化等
+可直接使用的应用类工具：视频、音乐、排盘、自动化等（12）
 
 | 项目 | 上游 | 类型 | 本地状态 | 说明 |
 |---|---|---|---|---|
 | `AiToEarn` | [yikart/AiToEarn](https://github.com/yikart/AiToEarn) | node | 已就位 | AI 内容创作与多平台发布平台（pnpm monorepo） |
 | `android-ad-cleaner` | [rddmwmddr/android-ad-cleaner](https://github.com/rddmwmddr/android-ad-cleaner) | python | 已就位 | 免 root 关闭国产安卓系统广告与推送（adb 脚本） |
+| `douyin-downloader` | [jiji262/douyin-downloader](https://github.com/jiji262/douyin-downloader) | python | 仅登记 | 抖音批量下载：视频、图集、合集、音乐，带去重与断点重试 |
+| `goink` | [sigpanic/goink](https://github.com/sigpanic/goink) | go | 仅登记 | Goink 桌面 AI 小说创作助手：对话式写作 + 状态追踪 + 本地语义搜索 |
 | `goutoujunshi` | [shengjidaguai-china/goutoujunshi](https://github.com/shengjidaguai-china/goutoujunshi) | skill | 已就位 | 恋爱军师技能：接住情绪 → 分析关系 → 给可执行策略 |
+| `komi-store` | [komi-store/komi-store](https://github.com/komi-store/komi-store) | app | 仅登记 | 开源应用商店客户端，聚合 GitHub / Codeberg / Forgejo 的 Release |
 | `Mineradio` | [XxHuberrr/Mineradio](https://github.com/XxHuberrr/Mineradio) | node | 已就位 | 沉浸式音乐播放器（Electron + Web） |
 | `MoneyPrinterTurbo` | [harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) | python | 已就位 | 一键生成短视频（文案/素材/配音/字幕） |
 | `OpenMausBot` | [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot) | node | 已就位 | 带虚拟机的开源 Bot 平台（TypeScript） |
