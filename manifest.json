@@ -1,6 +1,6 @@
 {
     "version":  1,
-    "generatedAt":  "2026-11-25",
+    "generatedAt":  "2026-11-26",
     "root":  "D:\\github专用仓库\\plugins",
     "note":  "fork 为云端完整备份；本地 clone 失败时重跑 bootstrap.ps1 即可续传，已完成的会跳过。",
     "plugins":  [
@@ -139,7 +139,7 @@
                         "desc":  "让编码 Agent 具备审美：艺术指导、参考图、浏览器自查",
                         "run":  "克隆后把 SKILL.md 所在目录复制进 ~/.trae-cn/skills",
                         "cat":  "AI",
-                        "local":  "已就位"
+                        "local":  "已停用"
                     },
                     {
                         "name":  "agile-pm-workflow",
@@ -166,7 +166,7 @@
                         "desc":  "前端设计技能：八个审美锚点，锁定配色/字体/质感",
                         "run":  "已装入 ~/.trae-cn/skills/frontend-design",
                         "cat":  "AI",
-                        "local":  "已就位"
+                        "local":  "已停用"
                     },
                     {
                         "name":  "ecc",
@@ -791,6 +791,30 @@
                         "run":  "挑缺失的技能目录复制进 ~/.trae-cn/skills",
                         "cat":  "资源",
                         "local":  "仅登记"
+                    },
+                    {
+                        "name":  "impeccable",
+                        "dir":  "impeccable",
+                        "upstream":  "pbakaus/impeccable",
+                        "fork":  null,
+                        "commit":  "4.11.0",
+                        "type":  "skill",
+                        "desc":  "设计主技能：设计/重做/评审/审计/打磨/动效，自带引擎，可截图自检",
+                        "run":  "已装入 ~/.trae-cn/skills/impeccable（首次运行自动下载引擎）",
+                        "cat":  "AI",
+                        "local":  "已就位"
+                    },
+                    {
+                        "name":  "web-design-guidelines",
+                        "dir":  "web-design-guidelines",
+                        "upstream":  "vercel-labs/web-interface-guidelines",
+                        "fork":  null,
+                        "commit":  "",
+                        "type":  "skill",
+                        "desc":  "Vercel 界面规范审查（审计能力已并入 impeccable）",
+                        "run":  "已归档到 archive/skills-disabled，不再加载",
+                        "cat":  "AI",
+                        "local":  "已停用"
                     }
                 ]
 }

@@ -6,13 +6,13 @@
 
 ```
 plugin-vault/
-├── manifest.json        全部 65 个项目：上游、类型、分类、本地状态、运行方式
+├── manifest.json        全部 67 个项目：上游、类型、分类、本地状态、运行方式
 ├── categories/          按属性分类的索引
-│   ├── ai.md            AI 框架与智能体（34）
+│   ├── ai.md            AI 框架与智能体（36）
 │   ├── resources.md     实用资源与教程（16）
 │   ├── life-tech.md     生活与科技应用（12）
 │   └── browsers.md      浏览器引擎（3）
-├── skills/              本机 43 个 Trae 技能的备份（原 my-skills 已并入，本机目录为指向此处的 junction）
+├── skills/              本机 40 个 Trae 技能的备份（原 my-skills 已并入，本机目录为指向此处的 junction）
 ├── archive/             已合并仓库的归档（原 skills-github-pages）
 ├── docs/                每个项目的部署说明
 ├── bootstrap.ps1        换机一键恢复

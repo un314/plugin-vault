@@ -1,6 +1,6 @@
 # AI 框架与智能体
 
-AI 开发框架、编码代理、技能包与多智能体平台（34）
+AI 开发框架、编码代理、技能包与多智能体平台（36）
 
 | 项目 | 上游 | 类型 | 本地状态 | 说明 |
 |---|---|---|---|---|
@@ -20,8 +20,9 @@ AI 开发框架、编码代理、技能包与多智能体平台（34）
 | `dify` | [langgenius/dify](https://github.com/langgenius/dify) | python | 仅登记 | Agentic 工作流 + RAG 知识库平台，可自托管 |
 | `ecc` | [affaan-m/ECC](https://github.com/affaan-m/ECC) | skill | 已就位 | everything-claude-code：技能、记忆、安全、研究优先的 Agent 增强包 |
 | `elephant-goldfish` | [google/elephant-goldfish-model](https://github.com/google/elephant-goldfish-model) | python | 仅登记 | 用 Agent 做软件设计与评审的插件（规格、评审、复查） |
-| `frontend-design` | [Ilm-Alan/frontend-design](https://github.com/Ilm-Alan/frontend-design) | skill | 已就位 | 前端设计技能：八个审美锚点，锁定配色/字体/质感 |
+| `frontend-design` | [Ilm-Alan/frontend-design](https://github.com/Ilm-Alan/frontend-design) | skill | 已停用 | 前端设计技能：八个审美锚点（已归档，统一用 impeccable） |
 | `gpt-engineer` | [AntonOsika/gpt-engineer](https://github.com/AntonOsika/gpt-engineer) | python | 已就位 | 用自然语言描述即可生成完整代码库 |
+| `impeccable` | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | skill | 已就位 | 设计主技能：设计/重做/评审/审计/打磨/动效，自带引擎可在本机跑 |
 | `jevrouter` | [BillionsBobby/JevRouter](https://github.com/BillionsBobby/JevRouter) | node | 仅登记 | 模型、工具与子 Agent 的轻量路由 |
 | `lingbot-touch` | [Robbyant/lingbot-touch](https://github.com/Robbyant/lingbot-touch) | python | 已就位 | LingBot Touch：视觉-触觉多模态模型推理工具 |
 | `loopforge` | [Tencent/LoopForge](https://github.com/Tencent/LoopForge) | go | 仅登记 | 编码 Agent 交付流水线：编排 CodeBuddy / Codex / Claude Code，带人工审批门 |
@@ -36,7 +37,8 @@ AI 开发框架、编码代理、技能包与多智能体平台（34）
 | `scientific-agent-skills` | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | skillpack | 仅登记 | K-Dense 科学技能库，177 个技能，覆盖生物/化学/医学/药物发现 |
 | `spec-kit` | [github/spec-kit](https://github.com/github/spec-kit) | python | 已就位 | GitHub 官方规格驱动开发工具包 |
 | `superpowers` | [obra/superpowers](https://github.com/obra/superpowers) | skill | 已就位 | 15 个工程能力技能：头脑风暴、TDD、系统化调试、并行代理、计划执行等 |
-| `taste-skill` | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | skill | 已就位 | 让编码 Agent 具备审美：艺术指导、参考图、浏览器自查 |
+| `taste-skill` | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | skill | 已停用 | 让编码 Agent 具备审美（已归档，统一用 impeccable） |
+| `web-design-guidelines` | [vercel-labs/web-interface-guidelines](https://github.com/vercel-labs/web-interface-guidelines) | skill | 已停用 | Vercel 界面规范审查（已归档，审计并入 impeccable） |
 | `wechat-intelligence-hub` | [Rion-Wu-tech/wechat-intelligence-hub](https://github.com/Rion-Wu-tech/wechat-intelligence-hub) | python | 仅登记 | 本地优先的微信情报库，含 wechat-cli 与情报库两个技能 |
 
 ---

@@ -5,9 +5,9 @@
 | 项 | 说明 |
 |---|---|
 | 唯一仓库 | `plugin-vault`（不再为单个项目新建仓库） |
-| 分类索引 | `categories/` 4 类：AI 34、资源 16、生活与科技 12、浏览器引擎 3 |
-| 技能备份 | `skills/` 43 个（`my-skills` 内容已并入；本机目录是指向此处的 junction） |
-| 清点总数 | 65 个项目，全部登记在 `manifest.json` |
+| 分类索引 | `categories/` 4 类：AI 36、资源 16、生活与科技 12、浏览器引擎 3 |
+| 技能备份 | `skills/` 40 个（`my-skills` 内容已并入；本机目录是指向此处的 junction） |
+| 清点总数 | 67 个项目，全部登记在 `manifest.json` |
 
 ## 2026-11 批次（开源项目与技能仓库盘点）
 
@@ -19,6 +19,14 @@
 | `darwin-skill` | alchaincyf/darwin-skill | ✅ 已就位，可直接触发 |
 
 其余（dify / open-webui / ollama / ARIS / scientific-agent-skills 等）仅登记上游与运行方式，未镜像代码：ARIS 38MB、科学技能库 471MB、Dify 与 Open WebUI 均为数百 MB，整包进仓库会让备份失去意义。
+
+## 2026-11-26 三项收尾
+
+| 事项 | 结果 | 文档 |
+|---|---|---|
+| 设计技能择优 | 只留 `impeccable`（4.11.0，实测引擎可跑）；taste-skill / frontend-design / frontend-skill / web-design-guidelines 移入 `archive/skills-disabled/` 停用 | `docs/design-skills.md` |
+| 大技能包按需取 | 新增 `scripts/fetch-skill.ps1`：稀疏克隆单个技能到 `%TEMP%`，用完 `-Clean`；ARIS 91 个、科学库 177 个均不常驻 | `docs/on-demand-skills.md` |
+| 组件盘点 | Node/Python/Git/ffmpeg/Ollama 已就绪；Docker、Go、Rust 未装，且 C 盘仅剩 4.1GB，不新装，容器类项目留云端 | `docs/component-audit.md` |
 
 ## 本轮 7 个项目的部署结果
 
