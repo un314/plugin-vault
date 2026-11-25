@@ -6,25 +6,29 @@
 
 ```
 plugin-vault/
-├── manifest.json        全部 67 个项目：上游、类型、分类、本地状态、运行方式
+├── manifest.json        全部 67 个项目：上游、类型、分类、本地状态、存放策略、运行方式
+├── PROJECTS.md          项目总索引：每个项目一页，直达上游
+├── projects/            67 个项目目录（<名字>/README.md：上游链接、用途、运行、拉取命令）
 ├── categories/          按属性分类的索引
 │   ├── ai.md            AI 框架与智能体（36）
 │   ├── resources.md     实用资源与教程（16）
 │   ├── life-tech.md     生活与科技应用（12）
 │   └── browsers.md      浏览器引擎（3）
 ├── skills/              本机 40 个 Trae 技能的备份（原 my-skills 已并入，本机目录为指向此处的 junction）
-├── archive/             已合并仓库的归档（原 skills-github-pages）
-├── docs/                每个项目的部署说明
+├── archive/             已合并仓库与停用技能的归档
+├── docs/                部署说明、按需拉取、组件盘点、设计技能择优
+├── scripts/             fetch-project.ps1（按需拉项目）、fetch-skill.ps1（按需拉技能）等
 ├── bootstrap.ps1        换机一键恢复
 ├── verify.ps1           可用性校验
 └── STATUS.md            当前部署状态
 ```
 
-## 三条约定
+## 四条约定
 
 1. **不新建仓库**。新项目只在本仓库登记（manifest + docs + 分类），代码放 `D:\github专用仓库\plugins\`。
 2. **分类存放**：AI 内容 → `categories/ai.md`；生活与科技 → `life-tech.md`；资源清单 → `resources.md`；浏览器内核 → `browsers.md`。
 3. **不重复部署**：`trae-remote-official` 里已有的能力不再重复收录。
+4. **存放分级**：只有基础能力、高频使用或大用量的项目才在 D 盘常驻；其余一律不下载，用 `scripts\fetch-project.ps1` 临时拉到 `%TEMP%`，跑完 `-Clean`。磁盘紧张，默认不落地。
 
 ## 本地与云端的对应关系
 

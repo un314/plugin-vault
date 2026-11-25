@@ -14,7 +14,8 @@
                         "desc":  "《从零开始构建智能体》教程与配套代码（Jupyter Notebook）",
                         "run":  "无需安装；用 Jupyter 打开章节 notebook 即可。需要 Python 环境时见 docs/hello-agents.md",
                         "cat":  "资源",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "OpenMausBot",
@@ -26,7 +27,8 @@
                         "desc":  "带虚拟机的开源 Bot 平台（TypeScript）",
                         "run":  "npm install \u0026\u0026 npm run dev（具体脚本见仓库 package.json）",
                         "cat":  "生活与科技",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "ziwei-doushu",
@@ -38,7 +40,8 @@
                         "desc":  "紫微斗数开源排盘引擎（Next.js）",
                         "run":  "npm install \u0026\u0026 npm run dev → http://localhost:3000",
                         "cat":  "生活与科技",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "android-ad-cleaner",
@@ -50,7 +53,8 @@
                         "desc":  "免 root 关闭国产安卓系统广告与推送（adb 脚本）",
                         "run":  "py -m venv .venv \u0026\u0026 .venv\\Scripts\\pip install -r requirements.txt",
                         "cat":  "生活与科技",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "agency-agents",
@@ -64,7 +68,8 @@
                         "desc":  "299 个专业角色代理，覆盖 19 个部门",
                         "run":  "已装入 ~/.trae-cn/skills/agency-agents，直接说「用 XX 专家帮我」",
                         "cat":  "AI",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "scrapling",
@@ -78,7 +83,8 @@
                         "desc":  "网页抓取框架（抗反爬 + 隐身浏览器）",
                         "run":  "pip install scrapling \u0026\u0026 scrapling install",
                         "cat":  "资源",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "goutoujunshi",
@@ -91,7 +97,8 @@
                         "desc":  "恋爱军师技能：接住情绪 → 分析关系 → 给可执行策略",
                         "run":  "已装入 ~/.trae-cn/skills/goutoujunshi",
                         "cat":  "生活与科技",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "AiToEarn",
@@ -103,7 +110,8 @@
                         "desc":  "AI 内容创作与多平台发布平台（pnpm monorepo）",
                         "run":  "pnpm install \u0026\u0026 pnpm dev（需 pnpm）",
                         "cat":  "生活与科技",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "Y2A-Auto",
@@ -115,7 +123,8 @@
                         "desc":  "YouTube 到 AcFun/B站 自动化搬运，含 AI 翻译与字幕",
                         "run":  "py -m venv .venv 后按 docs/Y2A-Auto.md 安装，需要 ffmpeg",
                         "cat":  "生活与科技",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "Mineradio",
@@ -127,7 +136,8 @@
                         "desc":  "沉浸式音乐播放器（Electron + Web）",
                         "run":  "npm install \u0026\u0026 npm start（或双击 start-mineradio.bat）",
                         "cat":  "生活与科技",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "taste-skill",
@@ -139,7 +149,8 @@
                         "desc":  "让编码 Agent 具备审美：艺术指导、参考图、浏览器自查",
                         "run":  "克隆后把 SKILL.md 所在目录复制进 ~/.trae-cn/skills",
                         "cat":  "AI",
-                        "local":  "已停用"
+                        "local":  "已停用",
+                        "storage":  "archived"
                     },
                     {
                         "name":  "agile-pm-workflow",
@@ -153,7 +164,8 @@
                         "desc":  "敏捷 PM 七步工作流：需求采集 → PRD → HTML 原型 → 流程图",
                         "run":  "已装入 ~/.trae-cn/skills/agile-pm-workflow",
                         "cat":  "AI",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "frontend-design",
@@ -166,7 +178,8 @@
                         "desc":  "前端设计技能：八个审美锚点，锁定配色/字体/质感",
                         "run":  "已装入 ~/.trae-cn/skills/frontend-design",
                         "cat":  "AI",
-                        "local":  "已停用"
+                        "local":  "已停用",
+                        "storage":  "archived"
                     },
                     {
                         "name":  "ecc",
@@ -178,7 +191,8 @@
                         "desc":  "everything-claude-code：技能、记忆、安全、研究优先的 Agent 增强包",
                         "run":  "克隆后按 README 选择要装的技能子目录",
                         "cat":  "AI",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "anime",
@@ -190,7 +204,8 @@
                         "desc":  "anime.js v4 动画引擎（JS/CSS/SVG/WebGL 通用动画库）",
                         "run":  "npm install \u0026\u0026 npm run build（产物在 dist/；示例 npm run open:examples）",
                         "cat":  "资源",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "rea-video",
@@ -202,7 +217,8 @@
                         "desc":  "逐镜头逆向视频（实拍/AI 生成/代码渲染）并给出复刻方案",
                         "run":  "py -m venv .venv 后按 docs/rea-video.md 安装",
                         "cat":  "生活与科技",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "openspec",
@@ -214,7 +230,8 @@
                         "desc":  "规格驱动开发（Spec-Driven Development）CLI 与工作流",
                         "run":  "npm install \u0026\u0026 npx openspec --help",
                         "cat":  "AI",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "bmad-method",
@@ -226,7 +243,8 @@
                         "desc":  "BMAD 敏捷 AI 开发方法论，含 36 个技能与智能体角色",
                         "run":  "按 README 用 npx bmad-method install",
                         "cat":  "AI",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "superpowers",
@@ -238,7 +256,8 @@
                         "desc":  "15 个工程能力技能：头脑风暴、TDD、系统化调试、并行代理、计划执行等",
                         "run":  "已装入 ~/.trae-cn/skills（15 个）",
                         "cat":  "AI",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "aider",
@@ -250,7 +269,8 @@
                         "desc":  "终端里的 AI 结对编程工具",
                         "run":  "py -m venv .venv \u0026\u0026 .venv\\Scripts\\pip install -e .",
                         "cat":  "AI",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "gpt-engineer",
@@ -262,7 +282,8 @@
                         "desc":  "用自然语言描述即可生成完整代码库",
                         "run":  "py -m venv .venv \u0026\u0026 .venv\\Scripts\\pip install -e .",
                         "cat":  "AI",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "spec-kit",
@@ -274,7 +295,8 @@
                         "desc":  "GitHub 官方规格驱动开发工具包",
                         "run":  "按 README 安装 specify CLI",
                         "cat":  "AI",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "claude-code-game-studios",
@@ -286,7 +308,8 @@
                         "desc":  "游戏工作室角色包，78 个岗位定义（设计/制作/测试）",
                         "run":  "按需复制 .claude/agents 下角色到技能目录",
                         "cat":  "AI",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "awesome-remote-job",
@@ -298,7 +321,8 @@
                         "desc":  "远程工作资源大全",
                         "run":  "直接阅读 README",
                         "cat":  "资源",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "awesome-telegram-groups",
@@ -310,7 +334,8 @@
                         "desc":  "Telegram 群组与频道索引",
                         "run":  "直接阅读 README",
                         "cat":  "资源",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "awesome-n8n-templates",
@@ -322,7 +347,8 @@
                         "desc":  "n8n 自动化工作流模板合集",
                         "run":  "导入 JSON 到 n8n",
                         "cat":  "资源",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "awesome-quant",
@@ -334,7 +360,8 @@
                         "desc":  "量化交易资源大全",
                         "run":  "直接阅读 README",
                         "cat":  "资源",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "awesome-public-datasets",
@@ -346,7 +373,8 @@
                         "desc":  "公开数据集索引",
                         "run":  "直接阅读 README",
                         "cat":  "资源",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "obscura",
@@ -358,7 +386,8 @@
                         "desc":  "Rust 编写的隐身浏览器引擎（AI Agent 用）",
                         "run":  "需 Rust 工具链：cargo build --release",
                         "cat":  "浏览器引擎",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "lightpanda",
@@ -370,7 +399,8 @@
                         "desc":  "Zig 编写的高性能无头浏览器，专为 AI/爬虫",
                         "run":  "下载官方二进制或 zig build",
                         "cat":  "浏览器引擎",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "ego-lite",
@@ -382,7 +412,8 @@
                         "desc":  "面向 AI Agent 浏览器自动化的 Chromium 发行版",
                         "run":  "按 README 启动本地浏览器服务",
                         "cat":  "浏览器引擎",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "awesome-design-md",
@@ -394,7 +425,8 @@
                         "cat":  "资源",
                         "desc":  "设计系统与 DESIGN.md 范例合集",
                         "run":  "直接阅读 README 与各设计文档",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "build-your-own-x",
@@ -406,7 +438,8 @@
                         "cat":  "资源",
                         "desc":  "从零手写各种技术的教程索引（数据库/编译器/操作系统等）",
                         "run":  "直接阅读 README",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "awesome-selfhosted",
@@ -418,7 +451,8 @@
                         "cat":  "资源",
                         "desc":  "可自托管开源软件大全",
                         "run":  "直接阅读 README",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "awesome-llm-apps",
@@ -430,7 +464,8 @@
                         "cat":  "AI",
                         "desc":  "100+ 可直接运行的 AI 应用源码合集",
                         "run":  "进入对应子目录按各自 README 安装",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "ai-job-search",
@@ -442,7 +477,8 @@
                         "cat":  "AI",
                         "desc":  "基于 Claude Code 的开源求职工具",
                         "run":  "见 SETUP.md，配合 Claude Code 使用",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "BettaFish",
@@ -454,7 +490,8 @@
                         "cat":  "AI",
                         "desc":  "多智能体舆情分析系统",
                         "run":  "需 Docker（本机未安装）或手动装 requirements.txt",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "MiroFish",
@@ -466,7 +503,8 @@
                         "cat":  "AI",
                         "desc":  "多智能体内容生成平台",
                         "run":  "需 Docker 或 npm run setup",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "MoneyPrinterTurbo",
@@ -478,7 +516,8 @@
                         "cat":  "生活与科技",
                         "desc":  "一键生成短视频（文案/素材/配音/字幕）",
                         "run":  ".venv 已建好：.venv\\Scripts\\python -m streamlit run webui.py",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "lingbot-touch",
@@ -490,7 +529,8 @@
                         "cat":  "AI",
                         "desc":  "LingBot Touch：视觉-触觉多模态模型推理工具",
                         "run":  "pip install -e . 后运行 infer.py",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "dify",
@@ -502,7 +542,8 @@
                         "desc":  "Agentic 工作流 + RAG 知识库平台，可自托管",
                         "run":  "docker compose up -d（官方 compose，需 Docker）",
                         "cat":  "AI",
-                        "local":  "仅登记"
+                        "local":  "仅登记",
+                        "storage":  "ondemand"
                     },
                     {
                         "name":  "open-webui",
@@ -514,7 +555,8 @@
                         "desc":  "多模型 Web 工作台，可接 Ollama 或任意 OpenAI 兼容接口",
                         "run":  "docker run -d -p 3000:8080 open-webui/open-webui",
                         "cat":  "AI",
-                        "local":  "仅登记"
+                        "local":  "仅登记",
+                        "storage":  "ondemand"
                     },
                     {
                         "name":  "ollama",
@@ -526,7 +568,8 @@
                         "desc":  "本地大模型运行时（DeepSeek / Qwen / GLM / Gemma 等）",
                         "run":  "装安装包后 ollama run qwen3",
                         "cat":  "AI",
-                        "local":  "仅登记"
+                        "local":  "仅登记",
+                        "storage":  "ondemand"
                     },
                     {
                         "name":  "openhands",
@@ -538,7 +581,8 @@
                         "desc":  "AI 驱动的软件开发平台（原 All-Hands-AI/OpenHands）",
                         "run":  "docker run（官方镜像，需 Docker）",
                         "cat":  "AI",
-                        "local":  "仅登记"
+                        "local":  "仅登记",
+                        "storage":  "ondemand"
                     },
                     {
                         "name":  "loopforge",
@@ -550,7 +594,8 @@
                         "desc":  "编码 Agent 交付流水线：编排 CodeBuddy / Codex / Claude Code，带人工审批门",
                         "run":  "docker compose up -d",
                         "cat":  "AI",
-                        "local":  "仅登记"
+                        "local":  "仅登记",
+                        "storage":  "ondemand"
                     },
                     {
                         "name":  "openmaic",
@@ -562,7 +607,8 @@
                         "desc":  "多智能体互动课堂，一键生成沉浸式学习体验",
                         "run":  "pnpm install \u0026\u0026 pnpm dev（需模型 Key）",
                         "cat":  "AI",
-                        "local":  "仅登记"
+                        "local":  "仅登记",
+                        "storage":  "ondemand"
                     },
                     {
                         "name":  "elephant-goldfish",
@@ -574,7 +620,8 @@
                         "desc":  "用 Agent 做软件设计与评审的插件（规格、评审、复查）",
                         "run":  "装为 Claude/Codex 插件后使用",
                         "cat":  "AI",
-                        "local":  "仅登记"
+                        "local":  "仅登记",
+                        "storage":  "ondemand"
                     },
                     {
                         "name":  "jevrouter",
@@ -586,7 +633,8 @@
                         "desc":  "模型、工具与子 Agent 的轻量路由",
                         "run":  "npm install \u0026\u0026 npm run build",
                         "cat":  "AI",
-                        "local":  "仅登记"
+                        "local":  "仅登记",
+                        "storage":  "ondemand"
                     },
                     {
                         "name":  "rust-anything",
@@ -598,7 +646,8 @@
                         "desc":  "把现有应用逐段改写成 Rust，每步用原行为录制做校验",
                         "run":  "cargo install --path .",
                         "cat":  "AI",
-                        "local":  "仅登记"
+                        "local":  "仅登记",
+                        "storage":  "ondemand"
                     },
                     {
                         "name":  "craft-anything",
@@ -610,7 +659,8 @@
                         "desc":  "理解任意软件的实现并复刻（清室逆向重建引擎）",
                         "run":  "cargo build --release",
                         "cat":  "AI",
-                        "local":  "仅登记"
+                        "local":  "仅登记",
+                        "storage":  "ondemand"
                     },
                     {
                         "name":  "agent-autoloop",
@@ -622,7 +672,8 @@
                         "desc":  "命令行 Agent 自动接活、自动跟进，拿不准才发卡片找人拍板",
                         "run":  "Node 22+，一条命令 autoloop run",
                         "cat":  "AI",
-                        "local":  "仅登记"
+                        "local":  "仅登记",
+                        "storage":  "ondemand"
                     },
                     {
                         "name":  "agent-s",
@@ -634,7 +685,8 @@
                         "desc":  "开源 computer-use 智能体（与已装 computer-use 能力重叠，仅登记）",
                         "run":  "pip install -e .（需图形桌面）",
                         "cat":  "AI",
-                        "local":  "仅登记"
+                        "local":  "仅登记",
+                        "storage":  "ondemand"
                     },
                     {
                         "name":  "aris",
@@ -646,7 +698,8 @@
                         "desc":  "ARIS 科研自动化技能包，91 个技能（选题、实验、审稿、论文写作）",
                         "run":  "挑需要的子目录复制进 ~/.trae-cn/skills",
                         "cat":  "AI",
-                        "local":  "仅登记"
+                        "local":  "仅登记",
+                        "storage":  "ondemand"
                     },
                     {
                         "name":  "scientific-agent-skills",
@@ -658,7 +711,8 @@
                         "desc":  "K-Dense 科学技能库，177 个技能，覆盖生物/化学/医学/药物发现",
                         "run":  "挑需要的子目录复制进 ~/.trae-cn/skills",
                         "cat":  "AI",
-                        "local":  "仅登记"
+                        "local":  "仅登记",
+                        "storage":  "ondemand"
                     },
                     {
                         "name":  "wechat-intelligence-hub",
@@ -670,7 +724,8 @@
                         "desc":  "本地优先的微信情报库，含 wechat-cli 与情报库两个技能",
                         "run":  "见仓库 docs，先跑 wechat-cli 建索引",
                         "cat":  "AI",
-                        "local":  "仅登记"
+                        "local":  "仅登记",
+                        "storage":  "ondemand"
                     },
                     {
                         "name":  "nuwa-skill",
@@ -682,7 +737,8 @@
                         "desc":  "女娲：蒸馏任意人物的思维方式，生成可运行的人物 Skill",
                         "run":  "已装入 ~/.trae-cn/skills/nuwa-skill",
                         "cat":  "AI",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "darwin-skill",
@@ -694,7 +750,8 @@
                         "desc":  "达尔文：盲评 + 保留/回滚，自动进化 SKILL.md",
                         "run":  "已装入 ~/.trae-cn/skills/darwin-skill",
                         "cat":  "AI",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "douyin-downloader",
@@ -706,7 +763,8 @@
                         "desc":  "抖音批量下载：视频、图集、合集、音乐，带去重与断点重试",
                         "run":  "pip install -r requirements.txt \u0026\u0026 python run.py",
                         "cat":  "生活与科技",
-                        "local":  "仅登记"
+                        "local":  "仅登记",
+                        "storage":  "ondemand"
                     },
                     {
                         "name":  "goink",
@@ -718,7 +776,8 @@
                         "desc":  "Goink 桌面 AI 小说创作助手：对话式写作 + 状态追踪 + 本地语义搜索",
                         "run":  "下载 Release 可执行文件",
                         "cat":  "生活与科技",
-                        "local":  "仅登记"
+                        "local":  "仅登记",
+                        "storage":  "ondemand"
                     },
                     {
                         "name":  "komi-store",
@@ -730,7 +789,8 @@
                         "desc":  "开源应用商店客户端，聚合 GitHub / Codeberg / Forgejo 的 Release",
                         "run":  "下载 Android APK",
                         "cat":  "生活与科技",
-                        "local":  "仅登记"
+                        "local":  "仅登记",
+                        "storage":  "ondemand"
                     },
                     {
                         "name":  "awesome",
@@ -742,7 +802,8 @@
                         "desc":  "各类 Awesome 清单的总索引",
                         "run":  "直接阅读 README",
                         "cat":  "资源",
-                        "local":  "仅登记"
+                        "local":  "仅登记",
+                        "storage":  "ondemand"
                     },
                     {
                         "name":  "public-apis",
@@ -754,7 +815,8 @@
                         "desc":  "免费公开 API 目录（按领域分类）",
                         "run":  "直接阅读 README / APILayer 索引",
                         "cat":  "资源",
-                        "local":  "仅登记"
+                        "local":  "仅登记",
+                        "storage":  "ondemand"
                     },
                     {
                         "name":  "free-for-dev",
@@ -766,7 +828,8 @@
                         "desc":  "开发者免费额度服务清单（SaaS / PaaS / IaaS）",
                         "run":  "直接阅读 README",
                         "cat":  "资源",
-                        "local":  "仅登记"
+                        "local":  "仅登记",
+                        "storage":  "ondemand"
                     },
                     {
                         "name":  "anydoc",
@@ -778,7 +841,8 @@
                         "desc":  "Word / PPT / Excel / PDF / EPUB 转干净 Markdown（Rust 实现，带 Node/Python 绑定）",
                         "run":  "npx anydoc 或 pip install anydoc",
                         "cat":  "资源",
-                        "local":  "仅登记"
+                        "local":  "仅登记",
+                        "storage":  "ondemand"
                     },
                     {
                         "name":  "awesome-codex-skills",
@@ -790,7 +854,8 @@
                         "desc":  "Codex 技能合集；其中约 40 个与本机已装技能重复，只取缺失项",
                         "run":  "挑缺失的技能目录复制进 ~/.trae-cn/skills",
                         "cat":  "资源",
-                        "local":  "仅登记"
+                        "local":  "仅登记",
+                        "storage":  "ondemand"
                     },
                     {
                         "name":  "impeccable",
@@ -802,7 +867,8 @@
                         "desc":  "设计主技能：设计/重做/评审/审计/打磨/动效，自带引擎，可截图自检",
                         "run":  "已装入 ~/.trae-cn/skills/impeccable（首次运行自动下载引擎）",
                         "cat":  "AI",
-                        "local":  "已就位"
+                        "local":  "已就位",
+                        "storage":  "resident"
                     },
                     {
                         "name":  "web-design-guidelines",
@@ -814,7 +880,8 @@
                         "desc":  "Vercel 界面规范审查（审计能力已并入 impeccable）",
                         "run":  "已归档到 archive/skills-disabled，不再加载",
                         "cat":  "AI",
-                        "local":  "已停用"
+                        "local":  "已停用",
+                        "storage":  "archived"
                     }
                 ]
 }

@@ -27,6 +27,8 @@
 | 设计技能择优 | 只留 `impeccable`（4.11.0，实测引擎可跑）；taste-skill / frontend-design / frontend-skill / web-design-guidelines 移入 `archive/skills-disabled/` 停用 | `docs/design-skills.md` |
 | 大技能包按需取 | 新增 `scripts/fetch-skill.ps1`：稀疏克隆单个技能到 `%TEMP%`，用完 `-Clean`；ARIS 91 个、科学库 177 个均不常驻 | `docs/on-demand-skills.md` |
 | 组件盘点 | Node/Python/Git/ffmpeg/Ollama 已就绪；Docker、Go、Rust 未装，且 C 盘仅剩 4.1GB，不新装，容器类项目留云端 | `docs/component-audit.md` |
+| 存放分级 | 41 个常驻、23 个按需、3 个归档；按需项目不下载，`scripts/fetch-project.ps1` 临时取用 | `README.md` 第 4 条 |
+| 项目目录 | 67 个项目各建 `projects/<名字>/README.md`，总索引 `PROJECTS.md`，均可一键跳上游 | `PROJECTS.md` |
 
 ## 本轮 7 个项目的部署结果
 
