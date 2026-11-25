@@ -35,8 +35,8 @@
 | 需模型权重 | lingbot-touch | ❌ 留云端 |
 | 手机端 | komi-store（APK） | ⚠️ 装手机，不占电脑 |
 
-## 建议的下一步（需要你点头）
+## 已执行的调整
 
-1. 把 Ollama 模型目录迁到 D 盘：设 `OLLAMA_MODELS=D:\ollama-models`，把现有 blobs 移过去。可腾出约 2GB C 盘空间。
+1. ✅ Ollama 模型已迁到 D 盘（2026-11-26）：设置用户环境变量 `OLLAMA_MODELS=D:\ollama-models`，原 `C:\Users\dizey\.ollama\models`（1.8GB）整体移动；C 盘可用从 4.11GB 升到 5.9GB；服务重启后 `qwen2.5:3b` 正常可读，新拉取的模型块写入 D 盘。
 2. 若确实要跑 Dify / Open WebUI 多 Agent 工作台，优先装在 D 盘（Docker 数据目录也改到 D），或直接用官方云版。
 3. 其余按 `docs/on-demand-skills.md` 的方式按需取，不常驻。

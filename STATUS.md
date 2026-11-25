@@ -29,6 +29,7 @@
 | 组件盘点 | Node/Python/Git/ffmpeg/Ollama 已就绪；Docker、Go、Rust 未装，且 C 盘仅剩 4.1GB，不新装，容器类项目留云端 | `docs/component-audit.md` |
 | 存放分级 | 41 个常驻、23 个按需、3 个归档；按需项目不下载，`scripts/fetch-project.ps1` 临时取用 | `README.md` 第 4 条 |
 | 项目目录 | 67 个项目各建 `projects/<名字>/README.md`，总索引 `PROJECTS.md`，均可一键跳上游 | `PROJECTS.md` |
+| Ollama 迁移 | `OLLAMA_MODELS=D:\ollama-models`；1.8GB 模型搬家，C 盘 4.11→5.9GB，模型与服务均正常 | `docs/component-audit.md` |
 
 ## 本轮 7 个项目的部署结果
 
