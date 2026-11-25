@@ -15,7 +15,7 @@
 ## 实际改动
 
 - 新增 `skills/impeccable/`（Trae 专用构建，非整仓克隆，只取 2.2MB）。
-- 四个旧技能移到 `archive/skills-disabled/`，不再加载，文件仍在，随时可恢复。
+- 四个旧技能已删除（本机与仓库均不再保留），git 历史可恢复。
 - 验证：`skills\impeccable\scripts\impeccable.cmd --version` → `4.11.0`；`context` 能正常输出项目上下文。
 
 ## 怎么用
@@ -27,8 +27,11 @@
 
 ## 恢复旧技能
 
-```powershell
-Move-Item D:\github专用仓库\plugin-vault\archive\skills-disabled\taste-skill D:\github专用仓库\plugin-vault\skills\
-```
+归档文件已按用户要求删除，但都留在 git 历史里，随时可捞回：
 
-（`skills/` 与 `~/.trae-cn/skills/` 是同一个目录，移回即生效。）
+```powershell
+cd D:\github专用仓库\plugin-vault
+git log --oneline -- archive/skills-disabled          # 找到删除前的提交
+git checkout <提交>^ -- archive/skills-disabled/taste-skill
+Move-Item archive\skills-disabled\taste-skill skills\
+```

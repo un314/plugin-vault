@@ -878,7 +878,7 @@
                         "commit":  "",
                         "type":  "skill",
                         "desc":  "Vercel 界面规范审查（审计能力已并入 impeccable）",
-                        "run":  "已归档到 archive/skills-disabled，不再加载",
+                        "run":  "已停用；文件已删除，可从 git 历史恢复",
                         "cat":  "AI",
                         "local":  "已停用",
                         "storage":  "archived"
