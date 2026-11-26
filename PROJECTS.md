@@ -1,6 +1,6 @@
 # ????
 
-? 72 ????????? projects/<??>/README.md ????,?????????????????????
+? 73 ????????? projects/<??>/README.md ????,?????????????????????
 
 ## ????
 
@@ -75,6 +75,7 @@
 | [`rust-anything`](projects/rust-anything/README.md) | [erkamyaman/rust-anything](https://github.com/erkamyaman/rust-anything) | AI | rust | ??(???) |
 | [`scientific-agent-skills`](projects/scientific-agent-skills/README.md) | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | AI | skillpack | ??(???) |
 | [`scrapling`](projects/scrapling/README.md) | [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling) | ?? | python | ??(D ?) |
+| [`shadcn-admin`](projects/shadcn-admin/README.md) | [satnaing/shadcn-admin](https://github.com/satnaing/shadcn-admin) | ?? | app | ??(???) |
 | [`spec-kit`](projects/spec-kit/README.md) | [github/spec-kit](https://github.com/github/spec-kit) | AI | python | ??(D ?) |
 | [`superpowers`](projects/superpowers/README.md) | [obra/superpowers](https://github.com/obra/superpowers) | AI | skill | ??(????) |
 | [`taste-skill`](projects/taste-skill/README.md) | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | AI | skill | ???(???) |

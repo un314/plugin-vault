@@ -947,6 +947,19 @@
                         "cat":  "?????",
                         "local":  "???",
                         "storage":  "ondemand"
+                    },
+                    {
+                        "name":  "shadcn-admin",
+                        "dir":  "shadcn-admin",
+                        "upstream":  "satnaing/shadcn-admin",
+                        "fork":  null,
+                        "commit":  "",
+                        "type":  "app",
+                        "cat":  "??",
+                        "desc":  "???????????:Shadcn + Vite + Tailwind,??????????????(MIT,17k?)",
+                        "run":  "pnpm install \u0026\u0026 pnpm dev;????,?????",
+                        "local":  "???",
+                        "storage":  "ondemand"
                     }
                 ]
 }
