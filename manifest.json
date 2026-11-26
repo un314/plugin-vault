@@ -908,6 +908,45 @@
                         "cat":  "??",
                         "local":  "???",
                         "storage":  "ondemand"
+                    },
+                    {
+                        "name":  "laya",
+                        "dir":  "laya",
+                        "upstream":  "NandhaKishorM/laya",
+                        "fork":  null,
+                        "commit":  "",
+                        "type":  "python",
+                        "desc":  "????????:????????/??/????,?? 100+ ??,?????????????(Apache-2.0,35.9k?)",
+                        "run":  "? README ?????;???????? checkpoint,?????,????",
+                        "cat":  "AI",
+                        "local":  "???",
+                        "storage":  "ondemand"
+                    },
+                    {
+                        "name":  "jev",
+                        "dir":  "jev",
+                        "upstream":  "BillionsBobby/JevRouter",
+                        "fork":  null,
+                        "commit":  "",
+                        "type":  "sdk",
+                        "desc":  "Jev ????????:?????,??????? SDK ???(? JevRouter,? LLM ?????Jev ?????????)",
+                        "run":  "?????????;SDK ? JevRouter,????",
+                        "cat":  "AI",
+                        "local":  "???",
+                        "storage":  "ondemand"
+                    },
+                    {
+                        "name":  "wcmigrate",
+                        "dir":  "WCMigrate",
+                        "upstream":  "yangokok886/WCMigrate",
+                        "fork":  null,
+                        "commit":  "",
+                        "type":  "tool",
+                        "desc":  "iOS 26-27.2 ??????????,?? worse_query ??????(GPL-3.0)",
+                        "run":  "? README ??? iOS ??????;???,???",
+                        "cat":  "?????",
+                        "local":  "???",
+                        "storage":  "ondemand"
                     }
                 ]
 }

@@ -1,6 +1,6 @@
 # ????
 
-? 69 ????????? projects/<??>/README.md ????,?????????????????????
+? 72 ????????? projects/<??>/README.md ????,?????????????????????
 
 ## ????
 
@@ -51,8 +51,10 @@
 | [`gpt-engineer`](projects/gpt-engineer/README.md) | [AntonOsika/gpt-engineer](https://github.com/AntonOsika/gpt-engineer) | AI | python | ??(D ?) |
 | [`hello-agents`](projects/hello-agents/README.md) | [datawhalechina/hello-agents](https://github.com/datawhalechina/hello-agents) | ?? | docs | ??(D ?) |
 | [`impeccable`](projects/impeccable/README.md) | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | AI | skill | ??(????) |
+| [`jev`](projects/jev/README.md) | [BillionsBobby/JevRouter](https://github.com/BillionsBobby/JevRouter) | AI | sdk | ??(???) |
 | [`jevrouter`](projects/jevrouter/README.md) | [BillionsBobby/JevRouter](https://github.com/BillionsBobby/JevRouter) | AI | node | ??(???) |
 | [`komi-store`](projects/komi-store/README.md) | [komi-store/komi-store](https://github.com/komi-store/komi-store) | ????? | app | ??(???) |
+| [`laya`](projects/laya/README.md) | [NandhaKishorM/laya](https://github.com/NandhaKishorM/laya) | AI | python | ??(???) |
 | [`lightpanda`](projects/lightpanda/README.md) | [lightpanda-io/browser](https://github.com/lightpanda-io/browser) | ????? | app | ??(D ?) |
 | [`lingbot-touch`](projects/lingbot-touch/README.md) | [Robbyant/lingbot-touch](https://github.com/Robbyant/lingbot-touch) | AI | python | ??(D ?) |
 | [`loopforge`](projects/loopforge/README.md) | [Tencent/LoopForge](https://github.com/Tencent/LoopForge) | AI | go | ??(???) |
@@ -76,6 +78,7 @@
 | [`spec-kit`](projects/spec-kit/README.md) | [github/spec-kit](https://github.com/github/spec-kit) | AI | python | ??(D ?) |
 | [`superpowers`](projects/superpowers/README.md) | [obra/superpowers](https://github.com/obra/superpowers) | AI | skill | ??(????) |
 | [`taste-skill`](projects/taste-skill/README.md) | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | AI | skill | ???(???) |
+| [`wcmigrate`](projects/wcmigrate/README.md) | [yangokok886/WCMigrate](https://github.com/yangokok886/WCMigrate) | ????? | tool | ??(???) |
 | [`web-design-guidelines`](projects/web-design-guidelines/README.md) | [vercel-labs/web-interface-guidelines](https://github.com/vercel-labs/web-interface-guidelines) | AI | skill | ???(???) |
 | [`wechat-intelligence-hub`](projects/wechat-intelligence-hub/README.md) | [Rion-Wu-tech/wechat-intelligence-hub](https://github.com/Rion-Wu-tech/wechat-intelligence-hub) | AI | python | ??(???) |
 | [`Y2A-Auto`](projects/Y2A-Auto/README.md) | [fqscfqj/Y2A-Auto](https://github.com/fqscfqj/Y2A-Auto) | ????? | python | ??(D ?) |
